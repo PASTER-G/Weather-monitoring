@@ -5,13 +5,15 @@
 ## Структура проекта
 ```
 .
-├── app.py                # Основное приложение на FastAPI
+├── src/
+│   ├── app.py            # Основное приложение на FastAPI
+│   └── requirements.txt  # Зависимости Python
 ├── Dockerfile            # Конфигурация Docker образа
 ├── docker-compose.yml    # Оркестрация контейнеров
-├── requirements.txt      # Зависимости Python
 ├── prometheus.yml        # Конфигурация Prometheus
 ├── README.md             # Документация
-└── grafana-datasources
+├── .env.example          # Пример переменных окружения
+└── grafana-datasources/
     └── datasource.yml    # Конфигурация Grafana
 ```
 
